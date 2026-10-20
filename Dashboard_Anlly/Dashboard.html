@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    .section-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .card {
+      height: min-content;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 8px;
+    }
+
+    .card-Estudiantes {
+      background-color: rgb(127, 229, 255);
+    }
+
+    .card-Matriculas {
+      background-color: rgb(17, 131, 144);
+    }
+
+    .card-Cursos {
+      background-color: rgb(206, 255, 127);
+    }
+
+    .card-Activas {
+      background-color: rgb(127, 255, 142);
+    }
+
+    .card-Completadas {
+      background-color: rgb(80, 98, 255);
+    }
+
+    .card-Canceladas {
+      background-color: red;
+    }
+
+    .imagenes-dashboard {
+      display: flex;
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .imagenes-dashboard img {
+      width: 48%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-dashboard">
+    <aside class="header-aside">
+      <header>
+        <h1>Sistema de gestion de Cursos</h1>
+      </header>
+
+      <nav class="Dashboard-nav">
+        <ul class="Dashboard-menu">
+          <li><a href="Dashboard.html">Inicio</a></li>
+
+          <li><a href="Cursos.html">Cursos</a></li>
+
+          <li><a href="Estudiantes.html">Estudiantes</a></li>
+
+          <li><a href="Matriculas.html">Matriculas</a></li>
+        </ul>
+      </nav>
+
+      <footer class="dashboard-footer">
+        <p>anlly buitrago</p>
+        <p>anbuitrago@cesde.net</p>
+      </footer>
+    </aside>
+
+    <main class="main">
+      <header class="header-main">
+        <h1>Sistema de gestion de cursos</h1>
+      </header>
+
+      <section class="section-title">
+        <h1>Dashboard</h1>
+        <h2>Resumen general del sistema</h2>
+      </section>
+
+      <section class="section-content">
+        <div class="card card-Estudiantes">
+          <p>Estudiantes</p>
+          <p>3</p>
+        </div>
+
+        <div class="card card-Cursos">
+          <p>Cursos</p>
+          <p>5</p>
+        </div>
+
+        <div class="card card-Matriculas">
+          <p>Matriculas</p>
+          <p>2</p>
+        </div>
+
+        <div class="card card-Activas">
+          <p>Activas</p>
+          <p>2</p>
+        </div>
+
+        <div class="card card-Completadas">
+          <p>Completadas</p>
+          <p>1</p>
+        </div>
+
+        <div class="card card-Canceladas">
+          <p>Canceladas</p>
+          <p>1</p>
+        </div>
+      </section>
+
+      <div class="imagenes-dashboard">
+        <img src="imagenes/matriculas_estado.png" alt="Matrículas por estado">
+        <img src="imagenes/cursos-populares.png" alt="Cursos populares">
+      </div>
+
+      <footer class="footer-main">
+        <p>Copyright © anlly buitrago 2026</p>
+        <p>Diseñado por: anlly dahiana buitrago jaramillo</p>
+      </footer>
+    </main>
+  </div>
+</body>
+
+</html>
